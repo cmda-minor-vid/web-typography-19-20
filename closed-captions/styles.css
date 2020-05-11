@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+#closed-captions p {
+  position: absolute;
+  transition: 0.05s;
+  opacity: 0;
+}
+
+#closed-captions .on {
+  opacity: 1;
+}
+
+#closed-captions .off {
+  transition: 0.2s;
+  opacity: 0;
+}
+
+.voice1 {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=styles.css.map */

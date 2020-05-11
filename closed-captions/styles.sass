@@ -1,0 +1,106 @@
+body
+  display: flex
+  align-items: center
+  flex-direction: column
+  justify-content: center
+
+  width: 100vw
+  height: 100vh
+  margin: 0
+
+//  Basic mechanics
+//  Hide all paragraphs by default
+//  Show them when they receive the class 'on'
+//  Hide them when they receive the class 'off'
+//  Feel free to adjust the defaults to your needs.
+
+#closed-captions p
+  position: absolute
+
+  transition: 0.05s
+
+  opacity: 0
+
+#closed-captions .on
+  opacity: 1
+
+#closed-captions .off
+  transition: 0.2s
+
+  opacity: 0
+
+.voice1
+  font-weight: bold
+
+//  The first paragraph, with extended timing for 
+//  all siblings. Basically what it does is that
+//  it shows the text after a delay, which 
+//  corresponds with the time that the word is
+//  spoken.
+//  You probably want to change the styling.
+
+//  /* .p0 span 
+//  opacity: 0;
+//  font-family: brenner;
+
+//  .p0.on span:first-of-type 
+//  opacity: 1;
+//  transition: 0s;
+//  font-weight: 200;
+
+//  .p0.on span:nth-of-type(2) 
+//  opacity: 1;
+//  transition: 0s .4s;
+//  margin-right: -.25em;
+//  font-weight: 400;
+
+//  .p0.on span:nth-of-type(3) 
+//  opacity: 1;
+//  transition: 0s .5s;
+//  margin-right: -.25em;
+//  font-weight: 600;
+
+//  .p0.on span:nth-of-type(4) 
+//  opacity: 1;
+//  transition: 0s .7s;
+//  margin-right: -.25em;
+//  font-weight: 800;
+
+//  .p0.on span:nth-of-type(5) 
+//  opacity: 1;
+//  transition: 0s 1.1s;
+//  margin-right: -.25em;
+//  font-family: "brenner sans";
+
+//  .p0.on span:nth-of-type(6) 
+//  opacity: 1;
+//  transition: 0s 1.4s;
+//  margin-right: -.25em;
+//  font-family: "brenner display";
+
+//  .p0.on span:nth-of-type(7) 
+//  opacity: 1;
+//  transition: 0s 1.7s;
+//  margin-right: -.25em;
+//  font-family: "brenner script";
+
+//  .p0.on span:nth-of-type(8) 
+//  opacity: 1;
+//  transition: 0s 2s;
+//  font-family: "brenner script";
+
+//  .p0.on span:nth-of-type(9) 
+//  opacity: 1;
+//  transition: 0s 3s;
+//  font-family: "brenner Sans condensed";
+
+//  .p0.on span:nth-of-type(10) 
+//  opacity: 1;
+//  transition: 0s 3.2s;
+//  font-family: "brenner mono";
+
+//  .p0.on span:nth-of-type(11) 
+//  opacity: 1;
+//  transition: 0s 3.7s;
+//  font-family: "brenner slab";
+//   */
