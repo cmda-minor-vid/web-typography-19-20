@@ -27,4 +27,23 @@ body {
   font-weight: bold;
 }
 
+div#closed-captions {
+  position: absolute;
+  z-index: 56;
+}
+
+#closed-captions p {
+  color: #fff;
+}
+
+.voice1 {
+  text-transform: uppercase;
+}
+
+#closed-captions {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
 /*# sourceMappingURL=styles.css.map */
