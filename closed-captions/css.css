@@ -108,3 +108,12 @@ You probably want to change the styling.
 	transition: 0s 3.7s;
 	font-family: "brenner slab";
 } */
+
+div#closed-captions {
+  position: absolute;
+  z-index: 56;
+}
+
+#closed-captions p {
+  color: #fff;
+}
