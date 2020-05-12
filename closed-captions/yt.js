@@ -8,8 +8,11 @@ function onYouTubeIframeAPIReady() {
     playerVars: {
       color: 'white',
       rel: 0,
+      // autoplay: 1,
+      // playsinline: 0,
+      // showInfo: 0,
+      // controls: 0,
       //start:
-      autoplay: '1',
       //playlist: 'taJ60kskkns,FG0fTKAqZ5g'
     },
     events: {

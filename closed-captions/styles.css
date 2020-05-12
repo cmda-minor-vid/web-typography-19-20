@@ -8,6 +8,10 @@ body {
   margin: 0;
 }
 
+#closed-captions {
+  height: 100px;
+}
+
 #closed-captions p {
   position: absolute;
   transition: 0.05s;
@@ -36,14 +40,108 @@ div#closed-captions {
   color: #fff;
 }
 
-.voice1 {
+#closed-captions .voice1 {
+  text-align: center;
   text-transform: uppercase;
+  color: #fff;
 }
 
 #closed-captions {
   display: flex;
   justify-content: center;
   width: 100vw;
+}
+
+#closed-captions p.voice2.p7 {
+  transition: 2s all ease-in-out;
+  transform: translateX(180px);
+}
+#closed-captions p.voice2.p7.on {
+  transform: translateX(240px);
+}
+#closed-captions .standard-voice {
+  text-transform: initial !important;
+  font-size: 16px !important;
+}
+#closed-captions p.voice3.p6 {
+  transition: 1s transform;
+  transform: translate(-141px, -145px);
+  text-transform: uppercase;
+}
+#closed-captions p.voice3.p6.on {
+  transform: translate(-161px, -135px);
+}
+#closed-captions .first-test p.voice1 {
+  max-width: 550px;
+  font-size: 20px;
+}
+#closed-captions .second-test {
+  font-style: italic;
+}
+#closed-captions .one-liner {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  left: 0;
+  max-width: initial !important;
+  max-width: 100%;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  text-align: center;
+  vertical-align: middle;
+  word-break: break-all;
+  pointer-events: none;
+  color: red;
+  font-size: 320px !important;
+  font-size: 24vw !important;
+  line-height: 0.7;
+}
+#closed-captions p.voice2.p42.on {
+  transform: translateY(10px) scale(0.9);
+}
+#closed-captions p.voice2.p43.on {
+  transform: translateY(20px) scale(0.8);
+}
+
+.first-test {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100px;
+  pointer-events: none;
+}
+
+p.voice1.standard-voice.p0 {
+  transform: translateX(150px);
+}
+
+p.voice2.p3.on, p.voice2.p4.on, p.voice2.p5.on, p.voice2.p7.on {
+  font-style: italic;
+}
+
+.p46.on {
+  overflow: hidden;
+  margin: 0 auto;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  border-right: 0.15em solid orange;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent 50%;
+    border-color: cyan;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

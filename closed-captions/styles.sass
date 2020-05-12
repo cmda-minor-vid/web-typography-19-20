@@ -14,6 +14,10 @@ body
 //  Hide them when they receive the class 'off'
 //  Feel free to adjust the defaults to your needs.
 
+#closed-captions
+  // pointer-events: none
+  height: 100px
+
 #closed-captions p
   position: absolute
 
@@ -32,79 +36,6 @@ body
 .voice1
   font-weight: bold
 
-//  The first paragraph, with extended timing for 
-//  all siblings. Basically what it does is that
-//  it shows the text after a delay, which 
-//  corresponds with the time that the word is
-//  spoken.
-//  You probably want to change the styling.
-
-//  /* .p0 span 
-//  opacity: 0;
-//  font-family: brenner;
-
-//  .p0.on span:first-of-type 
-//  opacity: 1;
-//  transition: 0s;
-//  font-weight: 200;
-
-//  .p0.on span:nth-of-type(2) 
-//  opacity: 1;
-//  transition: 0s .4s;
-//  margin-right: -.25em;
-//  font-weight: 400;
-
-//  .p0.on span:nth-of-type(3) 
-//  opacity: 1;
-//  transition: 0s .5s;
-//  margin-right: -.25em;
-//  font-weight: 600;
-
-//  .p0.on span:nth-of-type(4) 
-//  opacity: 1;
-//  transition: 0s .7s;
-//  margin-right: -.25em;
-//  font-weight: 800;
-
-//  .p0.on span:nth-of-type(5) 
-//  opacity: 1;
-//  transition: 0s 1.1s;
-//  margin-right: -.25em;
-//  font-family: "brenner sans";
-
-//  .p0.on span:nth-of-type(6) 
-//  opacity: 1;
-//  transition: 0s 1.4s;
-//  margin-right: -.25em;
-//  font-family: "brenner display";
-
-//  .p0.on span:nth-of-type(7) 
-//  opacity: 1;
-//  transition: 0s 1.7s;
-//  margin-right: -.25em;
-//  font-family: "brenner script";
-
-//  .p0.on span:nth-of-type(8) 
-//  opacity: 1;
-//  transition: 0s 2s;
-//  font-family: "brenner script";
-
-//  .p0.on span:nth-of-type(9) 
-//  opacity: 1;
-//  transition: 0s 3s;
-//  font-family: "brenner Sans condensed";
-
-//  .p0.on span:nth-of-type(10) 
-//  opacity: 1;
-//  transition: 0s 3.2s;
-//  font-family: "brenner mono";
-
-//  .p0.on span:nth-of-type(11) 
-//  opacity: 1;
-//  transition: 0s 3.7s;
-//  font-family: "brenner slab";
-//   */
-
 div#closed-captions
   position: absolute
   z-index: 56
@@ -112,11 +43,114 @@ div#closed-captions
 #closed-captions p
   color: #fff
 
-.voice1
+#closed-captions .voice1
+  text-align: center
   text-transform: uppercase
+
+  color: #fff
 
 #closed-captions
   display: flex
   justify-content: center
 
   width: 100vw
+
+#closed-captions
+  p.voice2.p7
+    transition: 2s all ease-in-out
+    transform: translateX(180px)
+
+  p.voice2.p7.on
+    transform: translateX(240px)
+
+  .standard-voice
+    text-transform: initial !important
+
+    font-size: 16px !important
+
+  p.voice3.p6
+    transition: 1s transform
+    transform: translate(-141px, -145px)
+    text-transform: uppercase
+
+    &.on
+      transform: translate(-161px, -135px)
+
+  .first-test
+    p.voice1
+      max-width: 550px
+
+      font-size: 20px
+
+  .second-test
+    font-style: italic
+
+  .one-liner
+    position: fixed
+    top: 50%
+    right: 0
+    left: 0
+
+    max-width: initial !important
+    max-width: 100%
+    margin: 0 auto
+
+    transform: translateY(-50%)
+    text-align: center
+    vertical-align: middle
+    word-break: break-all
+    pointer-events: none
+
+    color: rgba(255, 0, 0, 1)
+
+    font-size: 320px !important
+    font-size: 24vw !important
+    line-height: 0.7
+
+  p.voice2.p42.on
+    transform: translateY(10px) scale(.9)
+
+  p.voice2.p43.on
+    transform: translateY(20px) scale(.8)
+
+.first-test
+  display: flex
+  align-items: center
+  justify-content: center
+
+  width: 100vw
+  height: 100px
+
+  pointer-events: none
+
+p.voice1.standard-voice.p0
+  transform: translateX(150px)
+
+p.voice2.p3.on, p.voice2.p4.on, p.voice2.p5.on, p.voice2.p7.on
+  font-style: italic
+
+// https://css-tricks.com/snippets/css/typewriter-effect/
+.p0.on,
+.p44.on
+.p45.on
+.p46.on
+  overflow: hidden
+
+  margin: 0 auto
+
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite
+  white-space: nowrap
+  letter-spacing: .15em
+
+  border-right: .15em solid cyan
+
+@keyframes typing
+  from
+    width: 0
+  to
+    width: 100%
+
+@keyframes blink-caret
+  from, to
+    border-color: transparent 50%
+    border-color: cyan
