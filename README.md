@@ -21,7 +21,7 @@ Je levert een werkende versie op, gemaakt met HTML, CSS en JavaScript. Deze staa
 
 Je levert ook een *screen recording* met audio op van je fragment. Dit is een video van de definitieve versie, gemaakt van jouw browserscherm.
 
-De beoordeling is mondeling en volgt [de rubric uit het beoordelingsformulier(web-typografie-beoordeling.pdf).
+De beoordeling is mondeling en volgt [de rubric uit het beoordelingsformulier](web-typografie-beoordeling.pdf).
 
 ## Typografische restricties
 
